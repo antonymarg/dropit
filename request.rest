@@ -1,0 +1,22 @@
+POST https://bold-rain-273409.ew.r.appspot.com/auth/register
+Content-Type: application/json
+
+{
+    "name": "Josh",
+    "mail": "mail2",
+    "username": "fuego",
+    "password": "password"
+}
+###
+
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+    "username": "fuego",
+    "password": "password2"
+
+}
+
+
+###
