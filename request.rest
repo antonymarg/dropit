@@ -1,11 +1,40 @@
-POST https://bold-rain-273409.ew.r.appspot.com/auth/register
+POST https://dropit-304508.oa.r.appspot.com/auth/register
 Content-Type: application/json
 
 {
-    "name": "Josh",
-    "mail": "mail2",
-    "username": "fuego",
-    "password": "password"
+    "name": "Demetra Rodinou",
+    "mail": "demrod@gmail.com",
+    "username": "demrod",
+    "password": "demrod",
+    "imgURL":"https://drive.google.com/uc?export=view&id=1kjxzaQmRs6WkWjqQNsRdg5Cwt0awMaqj"
+}
+###
+
+POST https://dropit-304508.oa.r.appspot.com/auth/login
+Content-Type: application/json
+
+{
+    "username": "antonymarg",
+    "password": "antonymarg"
+
+}
+
+###
+
+GET https://localhost:3000/dailyConsumption
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOjEsImlhdCI6MTYxMzQ5NzE0MCwiZXhwIjoxNjEzNTMzMTQwfQ.pP2MBA2AqXThfgr0RABBo1l3gg02CS8RvWPP-nelA-g
+
+
+###
+POST http://localhost:3000/auth/register
+Content-Type: application/json
+
+{
+    "name": "Natalia Zacharaki",
+    "mail": "nataly.zacharaki@hotmail.com",
+    "username": "natzach",
+    "password": "natzach",
+    "imgURL":"https://drive.google.com/uc?export=view&id=1b4YS11iRyKco-bW5s_Q_xHl6fNZ-Gbda"
 }
 ###
 
@@ -13,10 +42,17 @@ POST http://localhost:3000/auth/login
 Content-Type: application/json
 
 {
-    "username": "fuego",
-    "password": "password2"
-
+    "username": "antonymarg",
+    "password": "antonymarg"
 }
+###
 
+GET http://localhost:3000/goalOfTheDay/value
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOjEsImlhdCI6MTYxMzI5NjIyOCwiZXhwIjoxNjEzMzMyMjI4fQ.QZx5X3E15cf_o9pnaR_WP3M6o-bGVrdfpn8y7_Bolas
+###
 
+GET http://localhost:3000/dashboard/insert
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOjEsImlhdCI6MTYxMzQxMjU1MSwiZXhwIjoxNjEzNDQ4NTUxfQ.YT6pyyEl8bwZBDM_rgdQ6T-5bgu7WaqzCArkm9whsFs
+type: 1
+name: 2
 ###
